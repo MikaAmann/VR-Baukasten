@@ -9,11 +9,11 @@ public class Wall : MonoBehaviour
 
     public void createWall()
     {
-        for (int y = 0; y < height; ++y)
+        for (int y = (int)transform.position.y; y < height; ++y)
         {
-            for (int x = 0; x < width; ++x)
+            for (int x = (int)transform.position.x; x < width; ++x)
             {
-                Instantiate(block, new Vector3(x, y, 0), Quaternion.identity);
+                Instantiate(block, new Vector3(x, y, transform.position.z), Quaternion.identity);
             }
         }
     }
