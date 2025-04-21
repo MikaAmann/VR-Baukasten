@@ -52,7 +52,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.02
+  m_Radius: 0.0035
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6750434000893368632
 MonoBehaviour:
@@ -66,6 +66,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aba7fb2c8629cb47ada91d342bd84ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isOccupied: 0
-  ghostPrefab: {fileID: 3207517709879328308, guid: 0dc1a0a49f042d6489457d55c7747df7, type: 3}
-  snapButton: {fileID: 0}

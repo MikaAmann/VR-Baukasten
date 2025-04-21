@@ -67,6 +67,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6640387835271095783, guid: 72138a47ec7b8714c91aa39dcdf3b714, type: 3}
       insertIndex: -1
       addedObject: {fileID: -4780482662619750504}
+    - targetCorrespondingSourceObject: {fileID: 6640387835271095783, guid: 72138a47ec7b8714c91aa39dcdf3b714, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -4357953086892072999}
   m_SourcePrefab: {fileID: 100100000, guid: 72138a47ec7b8714c91aa39dcdf3b714, type: 3}
 --- !u!1 &8008048771569707332 stripped
 GameObject:
@@ -90,3 +93,17 @@ MonoBehaviour:
   - {fileID: 8008048771569707332, guid: 208e8f58e23e3b14cac8d88503751963, type: 3}
   - {fileID: 8008048771569707332}
   currentIndex: 0
+--- !u!114 &-4357953086892072999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8008048771569707332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4128fe3589f78b9479d607236a7d386a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ghostPrefab: {fileID: 3207517709879328308, guid: 0dc1a0a49f042d6489457d55c7747df7, type: 3}
+  snapButton: {fileID: 1898632449962434549, guid: c348712bda248c246b8c49b3db54643f, type: 3}
