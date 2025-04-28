@@ -6,25 +6,35 @@ public class SnapAnchor : MonoBehaviour
 
     private void Awake()
     {
-        // Holt sich den Manager vom Elternobjekt (z. B. dem Cube selbst)
         manager = GetComponentInParent<SnapManager>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         SnapAnchor otherAnchor = other.GetComponent<SnapAnchor>();
+        
 
         if (otherAnchor != null && otherAnchor.transform.root != transform.root)
         {
-            // Berechne Position, an die gesnapped werden sollte
-            Vector3 localOffset = transform.localPosition;
-            Vector3 snapPosition = other.transform.position - (transform.parent.rotation * localOffset);
-
-            //Vector3 offset = transform.position - transform.parent.position;
-            //Vector3 snapPosition = otherAnchor.transform.position - offset;
-
+            // Offset korrekt im Local-Space berechnen und in Welt-Space umwandeln
+            //Vector3 localOffset = transform.localPosition;
+            //Vector3 rotatedOffset = transform.parent.rotation * localOffset;
+            //Vector3 currentAnchorPosition = transform.parent.position + rotatedOffset;
+            //Vector3 offset = otherAnchor.transform.position - currentAnchorPosition;
+            
+            // Zielposition berechnen, sodass die eigene Hitbox auf der anderen sitzt
+            //Vector3 snappedPosition = otherAnchor.transform.position + offset;
+            
+            //--
+            //Vector3 offset = otherAnchor.transform.position - transform.position;
+            //Vector3 snappedPosition = transform.parent.position + offset;
+            //--
+            Vector3 offset = transform.position - transform.parent.position;
+            Vector3 snappedPosition = otherAnchor.transform.position - offset;
+            
+            
             // Gib dem Manager die Zielposition
-            manager?.SetSnapTarget(snapPosition, otherAnchor.transform.rotation);
+            manager?.SetSnapTarget(snappedPosition, otherAnchor.transform.rotation); //otherAnchor.transform.rotation
         }
     }
 

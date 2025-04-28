@@ -45,8 +45,9 @@ public class SnapManager : MonoBehaviour
 
         if (snapTargetPosition != null && snapButton.action.IsPressed())
         {
-            ghostInstance.transform.position = snapTargetPosition.Value;
             ghostInstance.transform.rotation = snapTargetRotation;
+            ghostInstance.transform.position = snapTargetPosition.Value;
+            
             ghostInstance.SetActive(true);
         }
         else
@@ -55,7 +56,7 @@ public class SnapManager : MonoBehaviour
         }
     }
 
-    public void SetSnapTarget(Vector3 position, Quaternion rotation)
+    public void SetSnapTarget(Vector3 position, Quaternion rotation) //, Quaternion rotation
     {
         snapTargetPosition = position;
         snapTargetRotation = rotation;
