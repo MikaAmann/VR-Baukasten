@@ -28,8 +28,9 @@ public class SnapManager : MonoBehaviour
             if (snapTargetPosition != null && snapButton.action.IsPressed())
             {
                 // Snap ausführen
-                transform.position = snapTargetPosition.Value;
                 transform.rotation = snapTargetRotation;
+                transform.position = snapTargetPosition.Value;
+                
             }
 
             // Aufräumen
