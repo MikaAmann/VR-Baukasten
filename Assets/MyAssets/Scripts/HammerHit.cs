@@ -15,11 +15,11 @@ public class HammerHit : MonoBehaviour
         grabInteractable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
         if (!hasHit)
         {
-            CycleForm form = other.GetComponent<CycleForm>();
+            CycleForm form = collision.gameObject.GetComponent<CycleForm>();
             if (form != null)
             {
                 form.CycleToNextForm();
@@ -29,7 +29,7 @@ public class HammerHit : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnCollisionExit(Collision collision)
     {
         hasHit = false;
     }

@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1387429711289098262, guid: 72138a47ec7b8714c91aa39dcdf3b714, type: 3}
+      propertyPath: 'formCyclePrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8008048771569707332, guid: fd2946f183acb7447a7727c9ed1f55b4, type: 3}
+    - target: {fileID: 1387429711289098262, guid: 72138a47ec7b8714c91aa39dcdf3b714, type: 3}
+      propertyPath: 'formCyclePrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8008048771569707332}
     - target: {fileID: 4803614339566677342, guid: 72138a47ec7b8714c91aa39dcdf3b714, type: 3}
       propertyPath: m_RootOrder
       value: -1
