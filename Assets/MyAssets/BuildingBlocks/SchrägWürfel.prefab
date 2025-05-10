@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3361658431498693714
+--- !u!1001 &198088603134091842
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -51,14 +51,14 @@ PrefabInstance:
     - target: {fileID: 4497727680760017921, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 4300000, guid: 20dc7cc9612df5240918303421ffdc49, type: 2}
+      objectReference: {fileID: 4300000, guid: d2eb4b1ebf4bec945b9793fa83d32020, type: 2}
     - target: {fileID: 4845275869397406514, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 4300000, guid: 20dc7cc9612df5240918303421ffdc49, type: 2}
+      objectReference: {fileID: 4300000, guid: d2eb4b1ebf4bec945b9793fa83d32020, type: 2}
     - target: {fileID: 8296511575910155077, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
       propertyPath: m_Name
-      value: _QuerQuader 1
+      value: "Schr\xE4gW\xFCrfel"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
