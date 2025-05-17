@@ -41,7 +41,7 @@ public class HammerHit : MonoBehaviour
             UnityEngine.XR.Interaction.Toolkit.Interactors.IXRSelectInteractor interactor = grabInteractable.interactorsSelecting[0];
             if (interactor is UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInputInteractor controllerInteractor)
             {
-                controllerInteractor.SendHapticImpulse(0.5f, 0.1f);
+                controllerInteractor.SendHapticImpulse(intensity, duration);
             }
         }
     }
