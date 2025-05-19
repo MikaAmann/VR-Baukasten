@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class MatTransformer : MonoBehaviour
@@ -7,6 +8,7 @@ public class MatTransformer : MonoBehaviour
     public float duration;
 
     private bool hasHit = false;
+    private bool isResetting = false;
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable;
 
     private void Awake()
@@ -20,12 +22,24 @@ public class MatTransformer : MonoBehaviour
         {
             collision.gameObject.GetComponent<CycleMaterial>()?.CycleSMOArray();
             hasHit = true;
+            TriggerHapticFeedback();
         }
     }
 
     private void OnCollisionExit(Collision collision)
     {
+        if (hasHit && !isResetting)
+        {
+            StartCoroutine(ResetHaveHitAfterDelay(1f));
+        }
+    }
+    
+    private IEnumerator ResetHaveHitAfterDelay(float delay)
+    {
+        isResetting = true;
+        yield return new WaitForSeconds(delay);
         hasHit = false;
+        isResetting = false;
     }
 
     private void TriggerHapticFeedback()
