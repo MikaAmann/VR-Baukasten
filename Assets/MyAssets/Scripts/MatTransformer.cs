@@ -30,7 +30,7 @@ public class MatTransformer : MonoBehaviour
     {
         if (hasHit && !isResetting)
         {
-            StartCoroutine(ResetHaveHitAfterDelay(1f));
+            StartCoroutine(ResetHaveHitAfterDelay(0.2f));
         }
     }
     
