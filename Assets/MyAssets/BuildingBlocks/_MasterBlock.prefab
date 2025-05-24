@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: -3827468452509687613}
   m_Layer: 0
   m_Name: _MasterBlock
-  m_TagString: Untagged
+  m_TagString: BuildBlocks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -229,6 +229,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5664787405151894010, guid: 3a3c3d27216f5234a81a3f07298d7059, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6508269681406276123, guid: 3a3c3d27216f5234a81a3f07298d7059, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9116305754806135181, guid: 3a3c3d27216f5234a81a3f07298d7059, type: 3}
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant 2 (2)
@@ -290,6 +298,14 @@ PrefabInstance:
     - target: {fileID: 2385129689391126463, guid: da5df86dfa230b449a00b22a2ed917c5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5664787405151894010, guid: da5df86dfa230b449a00b22a2ed917c5, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6508269681406276123, guid: da5df86dfa230b449a00b22a2ed917c5, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9116305754806135181, guid: da5df86dfa230b449a00b22a2ed917c5, type: 3}
       propertyPath: m_Name
@@ -353,6 +369,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 5664787405151894010, guid: da5df86dfa230b449a00b22a2ed917c5, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6508269681406276123, guid: da5df86dfa230b449a00b22a2ed917c5, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9116305754806135181, guid: da5df86dfa230b449a00b22a2ed917c5, type: 3}
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant 6 (3)
@@ -413,6 +437,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2385129689391126463, guid: 3a3c3d27216f5234a81a3f07298d7059, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5664787405151894010, guid: 3a3c3d27216f5234a81a3f07298d7059, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6508269681406276123, guid: 3a3c3d27216f5234a81a3f07298d7059, type: 3}
+      propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9116305754806135181, guid: 3a3c3d27216f5234a81a3f07298d7059, type: 3}
@@ -477,6 +509,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5664787405151894010, guid: 7a7f36fedfc1ba24a849397640197b26, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6508269681406276123, guid: 7a7f36fedfc1ba24a849397640197b26, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9116305754806135181, guid: 7a7f36fedfc1ba24a849397640197b26, type: 3}
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant 3 (1)
@@ -538,6 +578,14 @@ PrefabInstance:
     - target: {fileID: 2385129689391126463, guid: da5df86dfa230b449a00b22a2ed917c5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5664787405151894010, guid: da5df86dfa230b449a00b22a2ed917c5, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6508269681406276123, guid: da5df86dfa230b449a00b22a2ed917c5, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9116305754806135181, guid: da5df86dfa230b449a00b22a2ed917c5, type: 3}
       propertyPath: m_Name
@@ -601,6 +649,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5664787405151894010, guid: 8d1d5438379c69541ba0fd1ecb4e8895, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6508269681406276123, guid: 8d1d5438379c69541ba0fd1ecb4e8895, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9116305754806135181, guid: 8d1d5438379c69541ba0fd1ecb4e8895, type: 3}
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant 7 (1)
@@ -662,6 +718,14 @@ PrefabInstance:
     - target: {fileID: 2385129689391126463, guid: da5df86dfa230b449a00b22a2ed917c5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5664787405151894010, guid: da5df86dfa230b449a00b22a2ed917c5, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6508269681406276123, guid: da5df86dfa230b449a00b22a2ed917c5, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9116305754806135181, guid: da5df86dfa230b449a00b22a2ed917c5, type: 3}
       propertyPath: m_Name
