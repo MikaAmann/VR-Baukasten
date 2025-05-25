@@ -133,6 +133,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 9116305754806135181, guid: 12c68edca133c0e459f8a192e72b6f9c, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5664787405151894010, guid: 12c68edca133c0e459f8a192e72b6f9c, type: 3}
     - {fileID: 6508269681406276123, guid: 12c68edca133c0e459f8a192e72b6f9c, type: 3}
@@ -202,6 +206,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant 2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9116305754806135181, guid: 3a3c3d27216f5234a81a3f07298d7059, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5664787405151894010, guid: 3a3c3d27216f5234a81a3f07298d7059, type: 3}
     - {fileID: 6508269681406276123, guid: 3a3c3d27216f5234a81a3f07298d7059, type: 3}
@@ -270,6 +278,10 @@ PrefabInstance:
     - target: {fileID: 9116305754806135181, guid: dc79c7a8db1e46c45b7f624a2d879cb2, type: 3}
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant 5 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9116305754806135181, guid: dc79c7a8db1e46c45b7f624a2d879cb2, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5664787405151894010, guid: dc79c7a8db1e46c45b7f624a2d879cb2, type: 3}
@@ -344,6 +356,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 9116305754806135181, guid: 12c68edca133c0e459f8a192e72b6f9c, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5664787405151894010, guid: 12c68edca133c0e459f8a192e72b6f9c, type: 3}
     - {fileID: 6508269681406276123, guid: 12c68edca133c0e459f8a192e72b6f9c, type: 3}
@@ -417,6 +433,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9116305754806135181, guid: 12c68edca133c0e459f8a192e72b6f9c, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5664787405151894010, guid: 12c68edca133c0e459f8a192e72b6f9c, type: 3}
     - {fileID: 6508269681406276123, guid: 12c68edca133c0e459f8a192e72b6f9c, type: 3}
@@ -486,6 +506,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant 5 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 9116305754806135181, guid: dc79c7a8db1e46c45b7f624a2d879cb2, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5664787405151894010, guid: dc79c7a8db1e46c45b7f624a2d879cb2, type: 3}
     - {fileID: 6508269681406276123, guid: dc79c7a8db1e46c45b7f624a2d879cb2, type: 3}
@@ -554,6 +578,10 @@ PrefabInstance:
     - target: {fileID: 9116305754806135181, guid: dc79c7a8db1e46c45b7f624a2d879cb2, type: 3}
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant 5 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9116305754806135181, guid: dc79c7a8db1e46c45b7f624a2d879cb2, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5664787405151894010, guid: dc79c7a8db1e46c45b7f624a2d879cb2, type: 3}
@@ -628,6 +656,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 9116305754806135181, guid: 12c68edca133c0e459f8a192e72b6f9c, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5664787405151894010, guid: 12c68edca133c0e459f8a192e72b6f9c, type: 3}
     - {fileID: 6508269681406276123, guid: 12c68edca133c0e459f8a192e72b6f9c, type: 3}
@@ -697,6 +729,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant 5 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 9116305754806135181, guid: dc79c7a8db1e46c45b7f624a2d879cb2, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5664787405151894010, guid: dc79c7a8db1e46c45b7f624a2d879cb2, type: 3}
     - {fileID: 6508269681406276123, guid: dc79c7a8db1e46c45b7f624a2d879cb2, type: 3}
@@ -765,6 +801,10 @@ PrefabInstance:
     - target: {fileID: 9116305754806135181, guid: 425cb91bba6dbb14882fc9754169c488, type: 3}
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant 8 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9116305754806135181, guid: 425cb91bba6dbb14882fc9754169c488, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5664787405151894010, guid: 425cb91bba6dbb14882fc9754169c488, type: 3}

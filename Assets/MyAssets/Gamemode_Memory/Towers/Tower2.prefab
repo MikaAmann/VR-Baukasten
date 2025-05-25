@@ -241,7 +241,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant 2 (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6508269681406276123, guid: 3a3c3d27216f5234a81a3f07298d7059, type: 3}
+    - {fileID: 5664787405151894010, guid: 3a3c3d27216f5234a81a3f07298d7059, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -311,7 +313,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant 6 (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6508269681406276123, guid: da5df86dfa230b449a00b22a2ed917c5, type: 3}
+    - {fileID: 5664787405151894010, guid: da5df86dfa230b449a00b22a2ed917c5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -381,7 +385,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant 6 (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6508269681406276123, guid: da5df86dfa230b449a00b22a2ed917c5, type: 3}
+    - {fileID: 5664787405151894010, guid: da5df86dfa230b449a00b22a2ed917c5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -451,7 +457,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant 2 (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6508269681406276123, guid: 3a3c3d27216f5234a81a3f07298d7059, type: 3}
+    - {fileID: 5664787405151894010, guid: 3a3c3d27216f5234a81a3f07298d7059, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -521,7 +529,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant 3 (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6508269681406276123, guid: 7a7f36fedfc1ba24a849397640197b26, type: 3}
+    - {fileID: 5664787405151894010, guid: 7a7f36fedfc1ba24a849397640197b26, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -591,7 +601,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant 6 (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6508269681406276123, guid: da5df86dfa230b449a00b22a2ed917c5, type: 3}
+    - {fileID: 5664787405151894010, guid: da5df86dfa230b449a00b22a2ed917c5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -661,7 +673,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant 7 (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6508269681406276123, guid: 8d1d5438379c69541ba0fd1ecb4e8895, type: 3}
+    - {fileID: 5664787405151894010, guid: 8d1d5438379c69541ba0fd1ecb4e8895, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -731,7 +745,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant 6 (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6508269681406276123, guid: da5df86dfa230b449a00b22a2ed917c5, type: 3}
+    - {fileID: 5664787405151894010, guid: da5df86dfa230b449a00b22a2ed917c5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

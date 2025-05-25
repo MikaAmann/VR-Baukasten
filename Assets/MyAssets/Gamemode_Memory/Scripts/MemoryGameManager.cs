@@ -15,10 +15,12 @@ public class MemoryGameManager : MonoBehaviour
     public Transform hologramSpawnPoint;
     public float hologramTimer;
     public BuildZone buildZone;
+    public Canvas canvas;
     
     private GameObject currentReferenceTower;
     private GameObject currentHologram;
     private Boolean gameStarted;
+    
     
     //[Header("Evaluation")]
 
@@ -38,7 +40,6 @@ public class MemoryGameManager : MonoBehaviour
             currentHologram = Instantiate(hologramPrefab, hologramSpawnPoint.position, Quaternion.identity);
             currentHologram.GetComponent<HologrammRenderer>()?.DisplayHoloTower(aPos);
             
-
             //Event-Listener: Sobald Hologramm aufgenommen wird → Timer starten
             XRGrabInteractable grab = currentHologram.GetComponent<XRGrabInteractable>();
             grab.selectEntered.AddListener(_ => StartCoroutine(HologramHeldTimer()));
@@ -49,68 +50,88 @@ public class MemoryGameManager : MonoBehaviour
 
     public void Evaluate()
     {
-        GameObject[] memoryBlocks = GameObject.FindGameObjectsWithTag("Memory");
-        List<GameObject> placedBlocks = buildZone.placedBlocksInZone;
-
-        int correctMatches = 0;
-
-        foreach (GameObject memoryBlock in memoryBlocks)
+        try
         {
-            BlockType memoryType = memoryBlock.GetComponent<BlockType>();
-            GameObject bestMatch = null;
-            float bestDistance = Mathf.Infinity;
+            GameObject[] memoryBlocks = GameObject.FindGameObjectsWithTag("Memory");
+            List<GameObject> placedBlocksOriginal = buildZone.placedBlocksInZone;
+            List<GameObject> placedBlocks = new List<GameObject>(placedBlocksOriginal);
+        
+            Debug.Log("Memory: "+ memoryBlocks.Length + ", Placed: " + placedBlocks.Count );
 
-            foreach (GameObject placedBlock in placedBlocks)
+            int correctMatches = 0;
+
+            foreach (GameObject memoryBlock in memoryBlocks)
             {
-                Debug.Log(placedBlock);
-                
-                BlockType placedType = placedBlock.GetComponent<BlockType>();
-                Debug.Log("Type: " + (memoryType != placedType));
-                if(memoryType != placedType)
-                    continue;
-                
-                float dist = Vector3.Distance(memoryBlock.transform.position, placedBlock.transform.position);
-                Debug.Log(dist);
-                if (dist < matchTolerance && dist < bestDistance)
+                BlockType memoryType = memoryBlock.GetComponent<BlockType>();
+                GameObject bestMatch = null;
+                float bestDistance = Mathf.Infinity;
+
+                foreach (GameObject placedBlock in placedBlocks)
                 {
-                    bestDistance = dist;
-                    bestMatch = placedBlock;
-                }
-            }
-            
-            if (bestMatch != null)
-            {
-                correctMatches++;
-                placedBlocks.Remove(bestMatch);
-            }
-        }
-        int totalMemoryBlocks = memoryBlocks.Length;
-        int extraBlocks = placedBlocks.Count;
-        
-        float totalScore = correctMatches * 1.0f
-                           + (memoryBlocks.Length - correctMatches) * 0f
-                           + extraBlocks * -0.5f;
+                    Debug.Log(placedBlock);
 
-        float maxScore = memoryBlocks.Length * 1.0f;
-        float finalScorePercent = Mathf.Clamp01(totalScore / maxScore);
-        
-        Debug.Log("Score: "+finalScorePercent);
-        
-        EndGame();
-        
+                    BlockType placedType = placedBlock.GetComponent<BlockType>();
+                    //Debug.Log("Type: " + (memoryType.type != placedType.type));
+                    if (memoryType.type != placedType.type)
+                        continue;
+
+                    float dist = Vector3.Distance(memoryBlock.transform.position, placedBlock.transform.position);
+                    if (dist < matchTolerance && dist < bestDistance)
+                    {
+                        bestDistance = dist;
+                        bestMatch = placedBlock;
+                        Debug.Log("Dist: " + dist + "at Type: " + placedType.type);
+                    }
+                }
+
+                if (bestMatch != null)
+                {
+                    correctMatches++;
+                    placedBlocks.Remove(bestMatch);
+                }
+                
+            }
+            int totalMemoryBlocks = memoryBlocks.Length;
+            int extraBlocks = placedBlocks.Count;
+            Debug.Log("Extra: " + extraBlocks);
+            Debug.Log("Matches: " + correctMatches);
+
+            float totalScore = correctMatches * 1.0f
+                               + extraBlocks * -0.5f;
+
+            float maxScore = memoryBlocks.Length * 1.0f;
+            float finalScorePercent = Mathf.Clamp01(totalScore / maxScore);
+            
+            canvas.GetComponent<ScoreUI>().UpdateScoreUI(finalScorePercent);
+
+            Debug.Log("Score: " + finalScorePercent);
+
+            EndGame();
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError("Fehler in Evaluate: " + ex.Message);
+        }
+
         
     }
 
     public void EndGame()
     {
         if (currentReferenceTower != null)
-        {
             Destroy(currentReferenceTower);
-            if (currentHologram != null) {
-                Destroy(currentHologram);
-            }
-            gameStarted = false;
+    
+        if (currentHologram != null)
+            Destroy(currentHologram);
+
+        gameStarted = false;
+        
+        foreach (GameObject block in buildZone.placedBlocksInZone)
+        {
+            Destroy(block,.2f);
         }
+
+        buildZone.placedBlocksInZone.Clear();
     }
     
     private IEnumerator HologramHeldTimer()
@@ -118,6 +139,4 @@ public class MemoryGameManager : MonoBehaviour
         yield return new WaitForSeconds(hologramTimer);
         Destroy(currentHologram);
     }
-    
-    
 }

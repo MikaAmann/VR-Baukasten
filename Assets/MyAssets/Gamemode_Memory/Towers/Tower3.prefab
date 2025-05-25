@@ -53,7 +53,6 @@ GameObject:
   - component: {fileID: 7206105118706896284}
   - component: {fileID: 7601618653654170888}
   - component: {fileID: 2068738921588168689}
-  - component: {fileID: 3554259420409093443}
   m_Layer: 0
   m_Name: Plane (6)
   m_TagString: Untagged
@@ -129,28 +128,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3554259420409093443
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 224499719436942151}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &7076093108430064583
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,7 +216,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5664787405151894010, guid: 12c68edca133c0e459f8a192e72b6f9c, type: 3}
+    - {fileID: 6508269681406276123, guid: 12c68edca133c0e459f8a192e72b6f9c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -301,7 +280,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant 2 (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5664787405151894010, guid: 3a3c3d27216f5234a81a3f07298d7059, type: 3}
+    - {fileID: 6508269681406276123, guid: 3a3c3d27216f5234a81a3f07298d7059, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -363,7 +344,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant 5 (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5664787405151894010, guid: dc79c7a8db1e46c45b7f624a2d879cb2, type: 3}
+    - {fileID: 6508269681406276123, guid: dc79c7a8db1e46c45b7f624a2d879cb2, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -429,7 +412,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5664787405151894010, guid: 12c68edca133c0e459f8a192e72b6f9c, type: 3}
+    - {fileID: 6508269681406276123, guid: 12c68edca133c0e459f8a192e72b6f9c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -495,7 +480,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5664787405151894010, guid: 12c68edca133c0e459f8a192e72b6f9c, type: 3}
+    - {fileID: 6508269681406276123, guid: 12c68edca133c0e459f8a192e72b6f9c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -557,7 +544,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant 5 (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5664787405151894010, guid: dc79c7a8db1e46c45b7f624a2d879cb2, type: 3}
+    - {fileID: 6508269681406276123, guid: dc79c7a8db1e46c45b7f624a2d879cb2, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -619,7 +608,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant 5 (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5664787405151894010, guid: dc79c7a8db1e46c45b7f624a2d879cb2, type: 3}
+    - {fileID: 6508269681406276123, guid: dc79c7a8db1e46c45b7f624a2d879cb2, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -685,7 +676,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5664787405151894010, guid: 12c68edca133c0e459f8a192e72b6f9c, type: 3}
+    - {fileID: 6508269681406276123, guid: 12c68edca133c0e459f8a192e72b6f9c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -747,7 +740,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant 5 (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5664787405151894010, guid: dc79c7a8db1e46c45b7f624a2d879cb2, type: 3}
+    - {fileID: 6508269681406276123, guid: dc79c7a8db1e46c45b7f624a2d879cb2, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -809,7 +804,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: _MasterBlock_Memory Variant 8 (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5664787405151894010, guid: 425cb91bba6dbb14882fc9754169c488, type: 3}
+    - {fileID: 6508269681406276123, guid: 425cb91bba6dbb14882fc9754169c488, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
