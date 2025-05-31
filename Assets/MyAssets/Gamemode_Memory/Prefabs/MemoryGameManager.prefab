@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4199688164952878341
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 137205489049086257}
+  - component: {fileID: 3197662155438548421}
+  m_Layer: 0
+  m_Name: MemoryGameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &137205489049086257
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4199688164952878341}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.719565, y: 0.9313316, z: 8.803124}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3197662155438548421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4199688164952878341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7367d6184e9f13f4b837c759bfc57b3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerList:
+  - {fileID: 2834346766218796925, guid: fb19a1ec97f0c354c8d7537edad01d92, type: 3}
+  - {fileID: 9210883308641559654, guid: 5aa39cc63b8e6ce40a9775d38f2bc14b, type: 3}
+  - {fileID: 7076093108430064583, guid: 8359d949c48ec7a4cbcffacae6e9a0b0, type: 3}
+  - {fileID: 8995596997805504813, guid: 53456494c6d5bef4fa847ad3ca07c4da, type: 3}
+  hologramPrefab: {fileID: 7617958491738702660, guid: 929828a8c23e282499fe6f1e97e73fa4, type: 3}
+  buildOrigin: {fileID: 0}
+  hologramSpawnPoint: {fileID: 0}
+  hologramTimer: 10
+  buildZone: {fileID: 0}
+  canvas: {fileID: 0}
+  matchTolerance: 1
