@@ -58,10 +58,32 @@ PrefabInstance:
       objectReference: {fileID: 4300000, guid: ec0146004b7edec45a4b9148df0a0ae7, type: 2}
     - target: {fileID: 8296511575910155077, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
       propertyPath: m_Name
-      value: _Quader
+      value: Quader
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8296511575910155077, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -7068672659240190663}
   m_SourcePrefab: {fileID: 100100000, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
+--- !u!1 &8841098723646910843 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8296511575910155077, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
+  m_PrefabInstance: {fileID: 689830434743824958}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-7068672659240190663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8841098723646910843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2def9069551d4838a98a3d7dae9e9b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  primitiveMultiplier: 1.2
+  materialMultiplier: 1

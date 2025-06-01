@@ -58,10 +58,32 @@ PrefabInstance:
       objectReference: {fileID: 4300000, guid: 87467b7e723d1364ab4802cc462de9ac, type: 2}
     - target: {fileID: 8296511575910155077, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
       propertyPath: m_Name
-      value: "_Br\xFCcke"
+      value: "Br\xFCcke"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8296511575910155077, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1339606310312467218}
   m_SourcePrefab: {fileID: 100100000, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
+--- !u!1 &7566948097873000531 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8296511575910155077, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
+  m_PrefabInstance: {fileID: 1882524874921163542}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1339606310312467218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7566948097873000531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2def9069551d4838a98a3d7dae9e9b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  primitiveMultiplier: 1.5
+  materialMultiplier: 1
