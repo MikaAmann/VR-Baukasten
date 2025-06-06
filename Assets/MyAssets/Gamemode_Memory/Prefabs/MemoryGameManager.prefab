@@ -52,7 +52,7 @@ MonoBehaviour:
   hologramPrefab: {fileID: 7617958491738702660, guid: 929828a8c23e282499fe6f1e97e73fa4, type: 3}
   buildOrigin: {fileID: 0}
   hologramSpawnPoint: {fileID: 0}
-  hologramTimer: 10
+  hologramTimer: 20
   buildZone: {fileID: 0}
   canvas: {fileID: 0}
   matchTolerance: 1

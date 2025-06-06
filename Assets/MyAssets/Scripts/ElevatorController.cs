@@ -10,15 +10,18 @@ public class ElevatorController : MonoBehaviour
     private Vector3 moveDirection;
     public float moveSpeed = 0.5f;
     private Vector3 startPos;
-    public float maxHeight = 15f;
+    public float maxHeightValue = 15f;
+    private float maxHeight;
     private float minHeight;
-    public PlayerOnPlattformManager pop;
+    private PlayerOnPlattformManager pop;
+    public AudioSource source;
 
 
     private void Awake()
     {
-       minHeight = Elevator.transform.position.y;
-       pop = Elevator.GetComponent<PlayerOnPlattformManager>(); 
+        minHeight = Elevator.transform.position.y;
+        maxHeight = Elevator.transform.position.y + maxHeightValue;
+        pop = Elevator.GetComponent<PlayerOnPlattformManager>(); 
     }
 
     void Update()
@@ -35,7 +38,7 @@ public class ElevatorController : MonoBehaviour
         Vector3 newPlayerPosition = XROrigin.transform.position + direction * (speed * Time.deltaTime);
         float newY = newPosition.y;
         float minY = startPos.y + minHeight;
-        float maxY = startPos.y + maxHeight;
+        float maxY = startPos.y + maxHeightValue;
 
         if (newY >= minY && newY <= maxY)
         {
@@ -53,17 +56,20 @@ public class ElevatorController : MonoBehaviour
     {
         isMoving = true;
         moveDirection = Vector3.up;
+        source.Play();
     }
 
     public void StartMovingDown()  
     {
         isMoving = true;
         moveDirection = Vector3.down;
+        source.Play();
     }
 
     public void StopMoving()  
     {
         isMoving = false;
+        source.Stop();
     }
 
 

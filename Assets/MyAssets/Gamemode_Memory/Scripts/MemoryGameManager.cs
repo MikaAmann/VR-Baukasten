@@ -52,61 +52,63 @@ public class MemoryGameManager : MonoBehaviour
     {
         try
         {
+            if (!gameStarted){return;}
+
             GameObject[] memoryBlocks = GameObject.FindGameObjectsWithTag("Memory");
-            List<GameObject> placedBlocksOriginal = buildZone.placedBlocksInZone;
-            List<GameObject> placedBlocks = new List<GameObject>(placedBlocksOriginal);
-        
-            Debug.Log("Memory: "+ memoryBlocks.Length + ", Placed: " + placedBlocks.Count );
-
-            int correctMatches = 0;
-
-            foreach (GameObject memoryBlock in memoryBlocks)
-            {
-                BlockType memoryType = memoryBlock.GetComponent<BlockType>();
-                GameObject bestMatch = null;
-                float bestDistance = Mathf.Infinity;
-
-                foreach (GameObject placedBlock in placedBlocks)
-                {
-                    Debug.Log(placedBlock);
-
-                    BlockType placedType = placedBlock.GetComponent<BlockType>();
-                    //Debug.Log("Type: " + (memoryType.type != placedType.type));
-                    if (memoryType.type != placedType.type)
-                        continue;
-
-                    float dist = Vector3.Distance(memoryBlock.transform.position, placedBlock.transform.position);
-                    if (dist < matchTolerance && dist < bestDistance)
-                    {
-                        bestDistance = dist;
-                        bestMatch = placedBlock;
-                        Debug.Log("Dist: " + dist + "at Type: " + placedType.type);
-                    }
-                }
-
-                if (bestMatch != null)
-                {
-                    correctMatches++;
-                    placedBlocks.Remove(bestMatch);
-                }
-                
-            }
-            int totalMemoryBlocks = memoryBlocks.Length;
-            int extraBlocks = placedBlocks.Count;
-            Debug.Log("Extra: " + extraBlocks);
-            Debug.Log("Matches: " + correctMatches);
-
-            float totalScore = correctMatches * 1.0f
-                               + extraBlocks * -0.5f;
-
-            float maxScore = memoryBlocks.Length * 1.0f;
-            float finalScorePercent = Mathf.Clamp01(totalScore / maxScore);
+                List<GameObject> placedBlocksOriginal = buildZone.placedBlocksInZone;
+                List<GameObject> placedBlocks = new List<GameObject>(placedBlocksOriginal);
             
-            canvas.GetComponent<ScoreUI>().UpdateScoreUI(finalScorePercent);
+                Debug.Log("Memory: "+ memoryBlocks.Length + ", Placed: " + placedBlocks.Count );
 
-            Debug.Log("Score: " + finalScorePercent);
+                int correctMatches = 0;
 
-            EndGame();
+                foreach (GameObject memoryBlock in memoryBlocks)
+                {
+                    BlockType memoryType = memoryBlock.GetComponent<BlockType>();
+                    GameObject bestMatch = null;
+                    float bestDistance = Mathf.Infinity;
+
+                    foreach (GameObject placedBlock in placedBlocks)
+                    {
+                        Debug.Log(placedBlock);
+
+                        BlockType placedType = placedBlock.GetComponent<BlockType>();
+                        //Debug.Log("Type: " + (memoryType.type != placedType.type));
+                        if (memoryType.type != placedType.type)
+                            continue;
+
+                        float dist = Vector3.Distance(memoryBlock.transform.position, placedBlock.transform.position);
+                        if (dist < matchTolerance && dist < bestDistance)
+                        {
+                            bestDistance = dist;
+                            bestMatch = placedBlock;
+                            Debug.Log("Dist: " + dist + "at Type: " + placedType.type);
+                        }
+                    }
+
+                    if (bestMatch != null)
+                    {
+                        correctMatches++;
+                        placedBlocks.Remove(bestMatch);
+                    }
+                    
+                }
+                int totalMemoryBlocks = memoryBlocks.Length;
+                int extraBlocks = placedBlocks.Count;
+                Debug.Log("Extra: " + extraBlocks);
+                Debug.Log("Matches: " + correctMatches);
+
+                float totalScore = correctMatches * 1.0f
+                                   + extraBlocks * -0.5f;
+
+                float maxScore = memoryBlocks.Length * 1.0f;
+                float finalScorePercent = Mathf.Clamp01(totalScore / maxScore);
+                
+                canvas.GetComponent<ScoreUI>().UpdateScoreUI(finalScorePercent);
+
+                Debug.Log("Score: " + finalScorePercent);
+
+                EndGame();
         }
         catch (Exception ex)
         {
