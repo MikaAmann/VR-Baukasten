@@ -7,4 +7,5 @@ public class MaterialScriptableObject : ScriptableObject
     public PhysicsMaterial physicsMaterial;
     public Material material;
     public float weightModifier;
+    public AudioClip impactSound;
 }
