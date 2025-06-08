@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: type
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 138034990159483193, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
+      propertyPath: ghostPrefab
+      value: 
+      objectReference: {fileID: 6738550362009480983, guid: c58d136090068c94291f65158901cdf4, type: 3}
     - target: {fileID: 3222624919070080375, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

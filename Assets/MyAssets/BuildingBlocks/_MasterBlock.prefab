@@ -292,7 +292,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 648b5d03ecec5f745951424b96f5740b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  formCyclePrefabs: []
+  formCyclePrefabs:
+  - {fileID: 24580344262933092, guid: a9807e22a78c4af40b87dfc4f03ba1ff, type: 3}
+  - {fileID: 8186666552206483719, guid: b91dc23f8c063234e97dd7b46270a9fb, type: 3}
+  - {fileID: 8841098723646910843, guid: 26935ac3c274ff249b51638ef372f4de, type: 3}
+  - {fileID: 6625335674437360155, guid: 590fe6367537a06448c107a6d991cdc0, type: 3}
+  - {fileID: 7417387678543040157, guid: f26489fbd115a4b4796deb02a439cfd0, type: 3}
+  - {fileID: 6738550362009480983, guid: 60a3c489cd2b6894b9f02f545d49755b, type: 3}
+  - {fileID: 2177023662632230725, guid: 9ad986928b03c2548ab2f1057d8e6e4c, type: 3}
+  - {fileID: 1388912690152852142, guid: e955e07bb80a54644b0c9a0792f05823, type: 3}
+  - {fileID: 7566948097873000531, guid: 023de07208c306543ac703c71870203a, type: 3}
   currentIndex: 0
 --- !u!114 &8286689985244171893
 MonoBehaviour:
@@ -337,7 +346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65aa61221c663f84a89359adb59f4cf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impactThreshold: 5
+  impactThreshold: 1
   maxImpact: 20
 --- !u!82 &-7528240735129772791
 AudioSource:

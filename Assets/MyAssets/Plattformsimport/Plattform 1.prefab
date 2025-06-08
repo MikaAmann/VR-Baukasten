@@ -716,7 +716,7 @@ MonoBehaviour:
   Elevator: {fileID: 8806626459831625349}
   XROrigin: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
   moveSpeed: 0.5
-  maxHeight: 15
+  maxHeightValue: 15
   source: {fileID: 1653933206488329137}
 --- !u!1 &4436389526135588802
 GameObject:
@@ -1555,7 +1555,7 @@ MonoBehaviour:
   Elevator: {fileID: 8806626459831625349}
   XROrigin: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
   moveSpeed: 0.5
-  maxHeight: 15
+  maxHeightValue: 15
   source: {fileID: 1653933206488329137}
 --- !u!1 &6869150714807883742
 GameObject:
