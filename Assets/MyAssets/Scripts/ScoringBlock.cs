@@ -9,9 +9,11 @@ public class ScoringBlock : MonoBehaviour
     {
         float y = transform.position.y;
 
-        if (y < 2f) return 1f;        // Ebene 1
-        else if (y < 4f) return 2f;   // Ebene 2
-        else return 3f;              // Ebene 3
+        if (y < 1f) return 1f;
+        else if (y < 2f) return 2f;
+        else if (y < 3f) return 3f;
+        else if (y < 4f) return 4f;
+        else return 4f;
     }
 
     public float GetScore()
@@ -20,4 +22,3 @@ public class ScoringBlock : MonoBehaviour
         return primitiveMultiplier * materialMultiplier * heightFactor;
     }
 }
-
