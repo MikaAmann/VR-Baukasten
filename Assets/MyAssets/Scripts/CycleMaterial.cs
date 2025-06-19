@@ -24,5 +24,6 @@ public class CycleMaterial : MonoBehaviour
         GetComponent<Rigidbody>().mass = baseMass * newMaterial.weightModifier;
         GetComponent<Collider>().material = newMaterial.physicsMaterial;
         GetComponent<MeshRenderer>().material = newMaterial.material;
+        GetComponent<AudioSource>().clip = newMaterial.impactSound;
     }
 }

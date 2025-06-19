@@ -8,6 +8,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3827468452509687613, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
+      propertyPath: type
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 138034990159483193, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
+      propertyPath: ghostPrefab
+      value: 
+      objectReference: {fileID: 8186666552206483719, guid: e66f4792716670d4dbaa7ea6e6c9955c, type: 3}
+    - target: {fileID: 1699535911093389314, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
+      propertyPath: 'formCyclePrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8186666552206483719}
     - target: {fileID: 3222624919070080375, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -73,17 +85,3 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8296511575910155077, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
   m_PrefabInstance: {fileID: 198088603134091842}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &-57054090294446314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8186666552206483719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2def9069551d4838a98a3d7dae9e9b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  primitiveMultiplier: 1.6
-  materialMultiplier: 1

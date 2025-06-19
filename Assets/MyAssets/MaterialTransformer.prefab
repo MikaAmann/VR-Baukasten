@@ -42,7 +42,6 @@ GameObject:
   - component: {fileID: 9882697110598913}
   - component: {fileID: 6297585790033772806}
   - component: {fileID: 7915941627718482303}
-  - component: {fileID: -4248426983745983863}
   - component: {fileID: 6139115420589694416}
   m_Layer: 0
   m_Name: MaterialTransformer
@@ -226,20 +225,6 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 1
---- !u!114 &-4248426983745983863
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8742205003983571464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb001786d06738a4e94b0cd24af1623d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  intensity: 0.5
-  duration: 0.3
 --- !u!114 &6139115420589694416
 MonoBehaviour:
   m_ObjectHideFlags: 0
