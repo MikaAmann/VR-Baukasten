@@ -9,10 +9,10 @@ public class ScoringBlock : MonoBehaviour
     {
         float y = transform.position.y;
 
-        if (y < 1f) return 1f;
-        else if (y < 2f) return 2f;
-        else if (y < 3f) return 3f;
-        else if (y < 4f) return 4f;
+        if (y < 12f) return 1f;
+        else if (y < 14f) return 2f;
+        else if (y < 16f) return 3f;
+        else if (y < 18f) return 4f;
         else return 4f;
     }
 

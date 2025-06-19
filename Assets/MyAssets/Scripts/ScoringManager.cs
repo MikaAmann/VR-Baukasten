@@ -15,6 +15,6 @@ public class ScoreManager : MonoBehaviour
             totalScore += block.GetScore();
         }
 
-        scoreText.text = "Punkte: " + totalScore.ToString("F1");
+        scoreText.text = totalScore.ToString("F1");
     }
 }

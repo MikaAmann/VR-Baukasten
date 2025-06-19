@@ -7,7 +7,7 @@ public class BuildZoneTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Block"))
+        if (other.CompareTag("BuildBlocks"))
         {
             ScoringBlock block = other.GetComponent<ScoringBlock>();
             if (block != null)
@@ -20,7 +20,7 @@ public class BuildZoneTrigger : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Block"))
+        if (other.CompareTag("BuildBlocks"))
         {
             ScoringBlock block = other.GetComponent<ScoringBlock>();
             if (block != null && blocksInZone.Contains(block))
