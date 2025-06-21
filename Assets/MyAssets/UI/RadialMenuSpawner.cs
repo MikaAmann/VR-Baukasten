@@ -20,10 +20,7 @@ public class RadialSelectionSpawner : MonoBehaviour
     {
         if (index < 0 || index >= partPrefabs.Length) return;
 
-        foreach (Transform child in handTransform)
-        {
-            Destroy(child.gameObject);
-        }
+      
 
         Vector3 spawnPosition = handTransform.position + handTransform.forward * 1.2f;
         Quaternion spawnRotation = Quaternion.identity;

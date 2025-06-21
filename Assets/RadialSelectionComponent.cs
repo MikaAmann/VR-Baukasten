@@ -4,9 +4,16 @@ using UnityEngine.ProBuilder.MeshOperations;
 using UnityEngine.UI;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using System.Collections.Generic;
 
 public class RadialSelectionComponent : MonoBehaviour
 {
+
+    [Header("Icons")]
+    public GameObject iconPrefab; // Prefab with an Image component
+    public List<Sprite> icons;    // Should match or be <= numRadialPart
+    public float iconRadius = 50f; // Distance from center (adjust to fit your canvas scale)
+
     [Header("Input")]
     public InputActionReference spawnButtonInput;
 
@@ -108,6 +115,22 @@ public class RadialSelectionComponent : MonoBehaviour
             spawnedRadialPart.transform.position = radialPartCanvas.position;
             spawnedRadialPart.transform.localEulerAngles = radialPartEulerAngle;
             spawnedRadialPart.GetComponent<Image>().fillAmount = (float)1 / numRadialPart - spacingPart;
+
+
+            
+            float angleRad = (angle + (360/numRadialPart)/2 - spacingPart/2) * Mathf.Deg2Rad;
+            Debug.Log($"Spawning icon {i}");
+
+            GameObject icon = Instantiate(iconPrefab, radialPartCanvas);
+            icon.GetComponent<Image>().sprite = icons[i];
+
+            Vector2 offset = new Vector2(Mathf.Sin(angleRad), Mathf.Cos(angleRad)) * iconRadius;
+            icon.GetComponent<RectTransform>().anchoredPosition = offset;
+            icon.transform.localRotation = Quaternion.identity;
+            icon.transform.localScale = Vector3.one;
+            icon.transform.localPosition += new Vector3(0, 0, -0.01f);
+
+
 
             spawnedParts.Add(spawnedRadialPart);
         }
