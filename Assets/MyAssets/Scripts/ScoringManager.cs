@@ -6,9 +6,11 @@ public class ScoreManager : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public BuildZoneTrigger buildZone;
 
+    private float totalScore = 0f;
+
     private void Update()
     {
-        float totalScore = 0f;
+        totalScore = 0f;
 
         foreach (var block in buildZone.GetBlocksInZone())
         {
@@ -16,5 +18,10 @@ public class ScoreManager : MonoBehaviour
         }
 
         scoreText.text = totalScore.ToString("F1");
+    }
+
+    public float GetCurrentScore()
+    {
+        return totalScore;
     }
 }
