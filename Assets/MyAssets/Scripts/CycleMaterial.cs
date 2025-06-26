@@ -26,4 +26,9 @@ public class CycleMaterial : MonoBehaviour
         GetComponent<MeshRenderer>().material = newMaterial.material;
         GetComponent<AudioSource>().clip = newMaterial.impactSound;
     }
+
+    public MaterialScriptableObject GetCurrentMaterial()
+    {
+        return mso[currentIndex];
+    }
 }

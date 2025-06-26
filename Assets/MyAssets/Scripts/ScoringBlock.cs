@@ -3,7 +3,12 @@ using UnityEngine;
 public class ScoringBlock : MonoBehaviour
 {
     public float primitiveMultiplier = 1f;
-    public float materialMultiplier = 1f;
+    private CycleMaterial cycleMaterial;
+
+    private void Awake()
+    {
+        cycleMaterial = GetComponent<CycleMaterial>();
+    }
 
     public float GetHeightFactor()
     {
@@ -19,6 +24,9 @@ public class ScoringBlock : MonoBehaviour
     public float GetScore()
     {
         float heightFactor = GetHeightFactor();
+        float materialMultiplier = cycleMaterial.GetCurrentMaterial().scoreMultiplier;
+
         return primitiveMultiplier * materialMultiplier * heightFactor;
     }
 }
+
