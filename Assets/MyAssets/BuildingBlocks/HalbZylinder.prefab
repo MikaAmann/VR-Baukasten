@@ -68,6 +68,22 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: 465f41857e07bbd4280100d679ce872e, type: 2}
+    - target: {fileID: 4845275869397406514, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: d75c8352a209e884db7c717b1b2e3653, type: 2}
+    - target: {fileID: 5237800744578781153, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5018fb0443c08614b9707a65a0d835b0, type: 2}
+    - target: {fileID: 6337332478703917267, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
+      propertyPath: m_Mass
+      value: 0.00000045000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 8286689985244171893, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
+      propertyPath: currentIndex
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8296511575910155077, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
       propertyPath: m_Name
       value: HalbZylinder
