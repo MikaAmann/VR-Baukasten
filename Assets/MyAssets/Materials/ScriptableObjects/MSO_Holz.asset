@@ -15,3 +15,5 @@ MonoBehaviour:
   physicsMaterial: {fileID: 13400000, guid: 489546e9bc6391247981424b486675dc, type: 2}
   material: {fileID: 2100000, guid: 934aa65e8e15a8f409afaf7426da9026, type: 2}
   weightModifier: 0.7
+  scoreMultiplier: 1.1
+  impactSound: {fileID: 0}
