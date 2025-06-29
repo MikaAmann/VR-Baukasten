@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6031129302402473463
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3131007851213947505}
+  - component: {fileID: 929554131716083008}
+  m_Layer: 0
+  m_Name: SetBlockManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3131007851213947505
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6031129302402473463}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.7129469, y: 0.3217163, z: 2.5379944}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &929554131716083008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6031129302402473463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0823af3db95bea4498d7d7302134029c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blockArray:
+  - {fileID: 24580344262933092, guid: a9807e22a78c4af40b87dfc4f03ba1ff, type: 3}
+  - {fileID: 6625335674437360155, guid: 590fe6367537a06448c107a6d991cdc0, type: 3}
+  - {fileID: 1388912690152852142, guid: e955e07bb80a54644b0c9a0792f05823, type: 3}
+  - {fileID: 7417387678543040157, guid: f26489fbd115a4b4796deb02a439cfd0, type: 3}
+  - {fileID: 6738550362009480983, guid: 60a3c489cd2b6894b9f02f545d49755b, type: 3}
+  - {fileID: 8841098723646910843, guid: 26935ac3c274ff249b51638ef372f4de, type: 3}
+  - {fileID: 6738550362009480983, guid: 60a3c489cd2b6894b9f02f545d49755b, type: 3}
+  - {fileID: 8186666552206483719, guid: b91dc23f8c063234e97dd7b46270a9fb, type: 3}
+  - {fileID: 2177023662632230725, guid: 9ad986928b03c2548ab2f1057d8e6e4c, type: 3}
+  buildZone: {fileID: 0}
+  presets: []
+  spawnPoints: {fileID: 0}
+  parent: {fileID: 0}
+  endDelay: 10
