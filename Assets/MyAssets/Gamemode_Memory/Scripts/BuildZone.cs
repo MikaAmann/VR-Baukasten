@@ -4,12 +4,17 @@ using UnityEngine;
 public class BuildZone : MonoBehaviour
 {
     public List<GameObject> placedBlocksInZone = new();
+    public Transform Parent;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("BuildBlocks"))
+        if (other.transform.IsChildOf(Parent))
         {
             placedBlocksInZone.Add(other.gameObject);
+        }
+        else
+        {
+            Destroy(other.gameObject); 
         }
     }
 

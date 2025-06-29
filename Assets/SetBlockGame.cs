@@ -16,10 +16,12 @@ public class SetBlockGame : MonoBehaviour
     public GameObject[] presets;
     private bool gameRunning;
     public GameObject spawnPoints;
+    public Transform parent;
+    private bool gameEnded;
+    public float endDelay;
 
     void Start()
     {
-        
     }
     void Update()
     {
@@ -28,7 +30,7 @@ public class SetBlockGame : MonoBehaviour
 
     public async void ToggleGamemode()
     {
-        if (!gameRunning)
+        if (!gameRunning && !gameEnded)
         {
             gameRunning = true;
             int numBlocks = blockArray.Length;
@@ -39,8 +41,8 @@ public class SetBlockGame : MonoBehaviour
                 rand = Random.Range(0, numBlocks);
                 if (rand == numBlocks)
                     continue;
-                GameObject spawnable = blockArray[rand];
-                Instantiate(spawnable, child.position, Quaternion.identity);
+                GameObject toSpawn = blockArray[rand];
+                GameObject spawnable = Instantiate(toSpawn, child.position, Quaternion.identity, parent);
                 int randMat = Random.Range(0, mso.Length);
                 await Task.Delay(200);
                 spawnable.GetComponent<CycleMaterial>().currentIndex = randMat;
@@ -51,17 +53,22 @@ public class SetBlockGame : MonoBehaviour
         }
         else {
             gameRunning = false;
-            foreach (GameObject block in buildZone.placedBlocksInZone)
-            {
-                Destroy(block, .2f);
-            }
-
-            buildZone.placedBlocksInZone.Clear();
+            gameEnded = true;
+            StartCoroutine(Delay());
         }
     }
 
 
-    public void ApplyMaterialProperties(MaterialScriptableObject newMaterial, GameObject spawnable)
+    private void DestroyLeftovers()
+    {
+        foreach (Transform child in parent)
+        {
+            Destroy(child.gameObject);
+        }
+        gameEnded = false;
+    }
+
+    private void ApplyMaterialProperties(MaterialScriptableObject newMaterial, GameObject spawnable)
     {
         float baseMass = spawnable.GetComponent<Rigidbody>().mass;
         spawnable.GetComponent<Rigidbody>().mass = baseMass * newMaterial.weightModifier;
@@ -69,11 +76,10 @@ public class SetBlockGame : MonoBehaviour
         spawnable.GetComponent<MeshRenderer>().material = newMaterial.material;
         spawnable.GetComponent<AudioSource>().clip = newMaterial.impactSound;
     }
-    IEnumerator MyDelayedMethod()
+    IEnumerator Delay()
     {
-        Debug.Log("Wait starts");
-        yield return new WaitForSeconds(0.2f); // 2-second delay
-        Debug.Log("Wait ends");
+        yield return new WaitForSeconds(endDelay);
+        DestroyLeftovers();
     }
 }
 
