@@ -19,9 +19,11 @@ public class SetBlockGame : MonoBehaviour
     public Transform parent;
     private bool gameEnded = false;
     public float endDelay;
+    public ScoreManager ScoreManager;
 
     void Start()
     {
+        ScoreManager.UpdateScore = false;
     }
     void Update()
     {
@@ -55,6 +57,7 @@ public class SetBlockGame : MonoBehaviour
             gameRunning = false;
             gameEnded = true;
             StartCoroutine(Delay());
+            ScoreManager.GetCurrentScore();
         }
     }
 

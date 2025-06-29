@@ -1376,6 +1376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 2053145363}
   buildZone: {fileID: 2131263868}
+  UpdateScore: 1
 --- !u!1001 &248872563
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8978,6 +8979,7 @@ MonoBehaviour:
   spawnPoints: {fileID: 1666420593}
   parent: {fileID: 1494491354}
   endDelay: 10
+  ScoreManager: {fileID: 244171786}
 --- !u!1001 &1033652007
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10722,6 +10724,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 622850206}
   buildZone: {fileID: 1370306705}
+  UpdateScore: 1
 --- !u!1001 &1222544405
 PrefabInstance:
   m_ObjectHideFlags: 0
