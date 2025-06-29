@@ -1,0 +1,46 @@
+{
+    "name": "RadialMenuButtonMapper",
+    "maps": [
+        {
+            "name": "RadialMenuMapper",
+            "id": "dfc51add-2baf-46a2-ae1f-cedb7ab35afe",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "af16d863-b1e6-469c-b2f6-39889f2a3948",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c00df0dc-69ce-4749-8bce-6a76fbdd6b37",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "RadialMapper",
+            "bindingGroup": "RadialMapper",
+            "devices": [
+                {
+                    "devicePath": "<XRController>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}

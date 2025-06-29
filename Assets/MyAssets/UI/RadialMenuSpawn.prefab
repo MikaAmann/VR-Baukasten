@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2330150701493314214
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 506833840580726620}
+  - component: {fileID: 4715107692571263023}
+  m_Layer: 0
+  m_Name: RadialMenuSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &506833840580726620
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2330150701493314214}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.92999995, y: 1.6122, z: -0.597}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4715107692571263023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2330150701493314214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25305e19424315e42bee4d41e4eb7ba2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radialSelectionComponent: {fileID: 0}
+  partPrefabs:
+  - {fileID: 24580344262933092, guid: a9807e22a78c4af40b87dfc4f03ba1ff, type: 3}
+  - {fileID: 8841098723646910843, guid: 26935ac3c274ff249b51638ef372f4de, type: 3}
+  - {fileID: 2177023662632230725, guid: 9ad986928b03c2548ab2f1057d8e6e4c, type: 3}
+  - {fileID: 7417387678543040157, guid: f26489fbd115a4b4796deb02a439cfd0, type: 3}
+  - {fileID: 6625335674437360155, guid: 590fe6367537a06448c107a6d991cdc0, type: 3}
+  - {fileID: 7566948097873000531, guid: 023de07208c306543ac703c71870203a, type: 3}
+  - {fileID: 1388912690152852142, guid: e955e07bb80a54644b0c9a0792f05823, type: 3}
+  - {fileID: 6738550362009480983, guid: 60a3c489cd2b6894b9f02f545d49755b, type: 3}
+  - {fileID: 8186666552206483719, guid: b91dc23f8c063234e97dd7b46270a9fb, type: 3}
+  handTransform: {fileID: 0}
