@@ -1,38 +1,38 @@
-using System.Collections.Generic;
-using UnityEngine;
+    using System.Collections.Generic;
+    using UnityEngine;
 
-public class BuildZoneTrigger : MonoBehaviour
-{
-    private HashSet<ScoringBlock> blocksInZone = new HashSet<ScoringBlock>();
-
-    private void OnTriggerEnter(Collider other)
+    public class BuildZoneTrigger : MonoBehaviour
     {
-        if (other.CompareTag("BuildBlocks"))
+        private HashSet<ScoringBlock> blocksInZone = new HashSet<ScoringBlock>();
+
+        private void OnTriggerEnter(Collider other)
         {
-            ScoringBlock block = other.GetComponent<ScoringBlock>();
-            if (block != null)
+            if (other.CompareTag("BuildBlocks"))
             {
-                blocksInZone.Add(block);
-                Debug.Log("Block hinzugefügt: " + other.name);
+                ScoringBlock block = other.GetComponent<ScoringBlock>();
+                if (block != null)
+                {
+                    blocksInZone.Add(block);
+                    Debug.Log("Block hinzugefügt: " + other.name);
+                }
             }
         }
-    }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("BuildBlocks"))
+        private void OnTriggerExit(Collider other)
         {
-            ScoringBlock block = other.GetComponent<ScoringBlock>();
-            if (block != null && blocksInZone.Contains(block))
+            if (other.CompareTag("BuildBlocks"))
             {
-                blocksInZone.Remove(block);
-                Debug.Log("Block entfernt: " + other.name);
+                ScoringBlock block = other.GetComponent<ScoringBlock>();
+                if (block != null && blocksInZone.Contains(block))
+                {
+                    blocksInZone.Remove(block);
+                    Debug.Log("Block entfernt: " + other.name);
+                }
             }
         }
-    }
 
-    public List<ScoringBlock> GetBlocksInZone()
-    {
-        return new List<ScoringBlock>(blocksInZone);
+        public List<ScoringBlock> GetBlocksInZone()
+        {
+            return new List<ScoringBlock>(blocksInZone);
+        }
     }
-}
