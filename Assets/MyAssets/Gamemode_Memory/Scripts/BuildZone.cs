@@ -4,6 +4,7 @@ using UnityEngine;
 public class BuildZone : MonoBehaviour
 {
     public List<GameObject> placedBlocksInZone = new();
+    public Transform Parent;
 
     private void OnTriggerEnter(Collider other)
     {

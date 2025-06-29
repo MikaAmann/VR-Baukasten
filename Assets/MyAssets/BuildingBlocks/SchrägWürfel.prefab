@@ -68,6 +68,22 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: d2eb4b1ebf4bec945b9793fa83d32020, type: 2}
+    - target: {fileID: 4845275869397406514, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 489546e9bc6391247981424b486675dc, type: 2}
+    - target: {fileID: 5237800744578781153, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 934aa65e8e15a8f409afaf7426da9026, type: 2}
+    - target: {fileID: 6337332478703917267, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
+      propertyPath: m_Mass
+      value: 0.0000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8286689985244171893, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
+      propertyPath: currentIndex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8296511575910155077, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
       propertyPath: m_Name
       value: "Schr\xE4gW\xFCrfel"

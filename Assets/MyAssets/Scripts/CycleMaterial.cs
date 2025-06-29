@@ -19,7 +19,7 @@ public class CycleMaterial : MonoBehaviour
         ApplyMaterialProperties(mso[currentIndex]);
     }
     
-    private void ApplyMaterialProperties(MaterialScriptableObject newMaterial)
+    public void ApplyMaterialProperties(MaterialScriptableObject newMaterial)
     {
         GetComponent<Rigidbody>().mass = baseMass * newMaterial.weightModifier;
         GetComponent<Collider>().material = newMaterial.physicsMaterial;
