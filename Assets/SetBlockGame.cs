@@ -17,7 +17,7 @@ public class SetBlockGame : MonoBehaviour
     private bool gameRunning;
     public GameObject spawnPoints;
     public Transform parent;
-    private bool gameEnded;
+    private bool gameEnded = false;
     public float endDelay;
 
     void Start()

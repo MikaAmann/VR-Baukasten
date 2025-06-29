@@ -8,13 +8,9 @@ public class BuildZone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.transform.IsChildOf(Parent))
+        if (other.CompareTag("BuildBlocks"))
         {
             placedBlocksInZone.Add(other.gameObject);
-        }
-        else
-        {
-            Destroy(other.gameObject); 
         }
     }
 
