@@ -19,6 +19,7 @@ public class Cleanup : MonoBehaviour
     {
         foreach(GameObject block in spawnedBlocks)
         {
+            spawnedBlocks.Remove(block);
             Destroy(block);
         }
     }
