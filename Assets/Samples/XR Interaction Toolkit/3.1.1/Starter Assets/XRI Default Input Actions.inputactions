@@ -1565,6 +1565,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "RadialMenuButton",
+                    "type": "Button",
+                    "id": "f16f3c2d-1895-4003-8ae3-39bc98a71e7d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1972,6 +1981,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Thumbstick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cab1139e-d6a3-4e6c-811f-e415ee69b83c",
+                    "path": "<XRController>{RightHand}/{SecondaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RadialMenuButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
