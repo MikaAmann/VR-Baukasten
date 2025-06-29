@@ -5,6 +5,7 @@ public class RadialSelectionSpawner : MonoBehaviour
     public RadialSelectionComponent radialSelectionComponent;
     public GameObject[] partPrefabs; // Match this with numRadialPart
     public Transform handTransform;
+    public GameObject cleanupManager;
 
     private void OnEnable()
     {
@@ -25,7 +26,9 @@ public class RadialSelectionSpawner : MonoBehaviour
         Vector3 spawnPosition = handTransform.position + handTransform.forward * 1.2f;
         Quaternion spawnRotation = Quaternion.identity;
 
-        Instantiate(partPrefabs[index], spawnPosition, spawnRotation);
+        GameObject spawned = Instantiate(partPrefabs[index], spawnPosition, spawnRotation);
+        cleanupManager.GetComponent<Cleanup>().spawnedBlocks.Add(spawned);
+
     }
 
 }
