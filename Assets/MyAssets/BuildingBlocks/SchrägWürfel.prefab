@@ -64,10 +64,18 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: d2eb4b1ebf4bec945b9793fa83d32020, type: 2}
+    - target: {fileID: 4528373725314103614, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
+      propertyPath: primitiveMultiplier
+      value: 1.4
+      objectReference: {fileID: 0}
     - target: {fileID: 4845275869397406514, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: d2eb4b1ebf4bec945b9793fa83d32020, type: 2}
+    - target: {fileID: 6337332478703917267, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
+      propertyPath: m_Mass
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8296511575910155077, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
       propertyPath: m_Name
       value: "Schr\xE4gW\xFCrfel"
@@ -75,10 +83,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8296511575910155077, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: -57054090294446314}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
 --- !u!1 &8186666552206483719 stripped
 GameObject:

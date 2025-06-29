@@ -16,4 +16,4 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 934aa65e8e15a8f409afaf7426da9026, type: 2}
   weightModifier: 0.7
   scoreMultiplier: 1.1
-  impactSound: {fileID: 0}
+  impactSound: {fileID: 8300000, guid: 16fba6d30ed741d4a9fdd6e79ee2f3ac, type: 3}

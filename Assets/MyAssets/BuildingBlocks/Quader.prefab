@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: 09308af4c15698d45ba3e108781a3085, type: 2}
+    - target: {fileID: 6337332478703917267, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8296511575910155077, guid: 4001ea008f04f9a45a0aaef57393b32b, type: 3}
       propertyPath: m_Name
       value: Quader
