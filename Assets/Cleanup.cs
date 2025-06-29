@@ -15,7 +15,7 @@ public class Cleanup : MonoBehaviour
     {
         
     }
-    void killSwitch()
+    public void killSwitch()
     {
         foreach(GameObject block in spawnedBlocks)
         {
