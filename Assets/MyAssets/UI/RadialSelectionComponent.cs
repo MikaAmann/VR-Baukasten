@@ -117,8 +117,10 @@ public class RadialSelectionComponent : MonoBehaviour
             spawnedRadialPart.GetComponent<Image>().fillAmount = (float)1 / numRadialPart - spacingPart;
 
 
-            
-            float angleRad = (angle + (360/numRadialPart)/2 - spacingPart/2) * Mathf.Deg2Rad;
+
+            float fullSliceAngle = 360f / numRadialPart;
+            float sliceCenterAngle = i * fullSliceAngle + fullSliceAngle / 2f - spacingPart * 180f; 
+            float angleRad = sliceCenterAngle * Mathf.Deg2Rad;
             Debug.Log($"Spawning icon {i}");
 
             GameObject icon = Instantiate(iconPrefab, radialPartCanvas);
